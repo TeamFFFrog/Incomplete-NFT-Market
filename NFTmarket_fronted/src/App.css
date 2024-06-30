@@ -1,0 +1,186 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body background and font styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #101010;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the whole app */
+.app-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #1e1e1e;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Main content area */
+main {
+  padding: 40px;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu a {
+  color: #ffffff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.connect-wallet-button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.connect-wallet-button:hover {
+  background-color: #0056b3;
+}
+
+/* NFT Grid styles */
+.nft-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 30px;
+}
+
+.nft-card {
+  background-color: #272727;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.nft-card:hover {
+  transform: translateY(-5px);
+}
+
+.nft-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nft-info {
+  padding: 20px;
+  text-align: left;
+  color: #ffffff;
+}
+
+/* NFT Detail styles */
+.nft-detail {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #272727;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.nft-detail h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.nft-detail p {
+  line-height: 1.8;
+  color: #ffffff;
+}
+
+/* Upload container styles */
+.upload-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #272727;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.upload-form label {
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.upload-form input,
+.upload-form textarea {
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #333333;
+  border-radius: 6px;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.upload-form .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.cancel-button,
+.upload-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cancel-button {
+  background: #666666;
+  color: #ffffff;
+}
+
+.upload-button {
+  background: #007bff;
+  color: #ffffff;
+}
+
+.upload-button:hover {
+  background: #0056b3;
+}
